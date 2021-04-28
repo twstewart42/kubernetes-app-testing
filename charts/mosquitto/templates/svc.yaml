@@ -12,8 +12,10 @@ spec:
   ports:
   - name: headless
     port: 1883
+    nodePort: 1883  
   - name: websocket
     port: 9090
+    nodePort: 9090
   selector:
     app: {{ template "fullname" . }}
 #status:

@@ -9,7 +9,7 @@ metadata:
     heritage: {{ .Release.Service }}
 spec:
   type: {{ .Values.service.type }}
-  clusterIP: 10.43.207.88
+  clusterIP: 10.100.207.88
   ports:
   - name: headless
     port: 1883

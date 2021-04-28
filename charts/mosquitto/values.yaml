@@ -42,3 +42,4 @@ config: |-
   listener 1883
   listener 9090
   protocol websockets
+  allow_anonymous true

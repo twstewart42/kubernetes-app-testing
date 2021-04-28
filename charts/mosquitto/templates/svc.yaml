@@ -9,7 +9,6 @@ metadata:
     heritage: {{ .Release.Service }}
 spec:
   type: {{ .Values.service.type }}
-  clusterIP: 10.100.207.88
   ports:
   - name: headless
     port: 1883
@@ -17,7 +16,7 @@ spec:
     port: 9090
   selector:
     app: {{ template "fullname" . }}
-status:
-  loadBalancer:
-    ingress:
-    - ip: 172.21.16.38
+#status:
+#  loadBalancer:
+#    ingress:
+#    - ip: 172.21.16.38

@@ -8,7 +8,7 @@ imagePullPolicy: IfNotPresent
 
 service:
   enabled: true
-  type: "LoadBalancer"
+  type: "NodePort"
 
 persistence:
   enabled: true
